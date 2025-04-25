@@ -1,14 +1,14 @@
-// import React from "react";
+import { User, Briefcase, BookOpen } from "lucide-react";
 
 const navLinks = [
-  { id: "personal", label: "About" },
-  { id: "experience", label: "Experiences" },
-  { id: "timeline", label: "Projects" },
+  { id: "personal", label: "About", icon: User },
+  { id: "experience", label: "Experiences", icon: Briefcase },
+  { id: "timeline", label: "Projects", icon: BookOpen },
 ];
 
 export default function Sidebar({ onNavClick, active }: { onNavClick: (id: string) => void; active: string }) {
   return (
-    <aside className="sidebar flex flex-col items-center w-72 min-w-[260px] max-w-xs rounded-2xl py-8 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-xl border border-zinc-200 dark:border-zinc-800">
+    <aside className="sidebar flex flex-col items-center w-72 min-w-[260px] max-w-xs rounded-2xl py-8 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md">
       {/* Profile Image */}
       <img
         src="/profile.jpg"
@@ -26,18 +26,26 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
         <div><b>Skype Live:</b> live:nguyenthanhdieu96</div>
       </div>
       {/* Navigation */}
-      <nav className="flex gap-4 w-full justify-center mb-4">
-        {navLinks.map((link) => (
-          <button
-            key={link.id}
-            className={`px-3 py-1 rounded-lg font-medium transition-all duration-300 text-sm
-              ${active === link.id ? "bg-primary text-primary-foreground scale-105 shadow-md" : "hover:bg-zinc-100 dark:hover:bg-zinc-800"}
-            `}
-            onClick={() => onNavClick(link.id)}
-          >
-            {link.label}
-          </button>
-        ))}
+      <nav className="flex flex-col gap-2 w-full mb-4">
+        {navLinks.map((link) => {
+          const Icon = link.icon;
+          const isActive = active === link.id;
+          return (
+            <button
+              key={link.id}
+              className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-base tracking-wide outline-none border border-transparent focus:ring-2 focus:ring-primary/50
+                ${isActive
+                  ? "bg-primary/90 text-primary-foreground scale-[1.04] shadow-lg border-primary/70 ring-2 ring-primary/40"
+                  : "hover:bg-zinc-100 dark:hover:bg-zinc-800 bg-transparent text-zinc-700 dark:text-zinc-200"}
+              `}
+              style={{overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis'}}
+              onClick={() => onNavClick(link.id)}
+            >
+              <Icon className={`w-5 h-5 ${isActive ? 'text-white' : 'text-zinc-500 dark:text-zinc-400'} transition-colors`} />
+              {link.label}
+            </button>
+          );
+        })}
       </nav>
       {/* Socials */}
       <div className="flex gap-4 mt-2 text-xl text-zinc-600 dark:text-zinc-300">
