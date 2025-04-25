@@ -8,24 +8,24 @@ const navLinks = [
 
 export default function Sidebar({ onNavClick, active }: { onNavClick: (id: string) => void; active: string }) {
   return (
-    <aside className="sidebar flex flex-col items-center w-72 min-w-[260px] max-w-xs rounded-2xl py-8 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md">
+    <aside className="sidebar fixed top-0 h-[85vh] w-72 min-w-[260px] max-w-xs flex flex-col items-center rounded-2xl py-6 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md z-30">
       {/* Profile Image */}
       <img
         src="/profile.jpg"
         alt="Profile"
-        className="w-28 h-28 rounded-xl object-cover mb-4 border-4 border-primary shadow-md"
+        className="w-24 h-24 rounded-xl object-cover mb-3 border-4 border-primary shadow-md"
       />
       {/* Name & Title */}
       <h2 className="text-2xl font-bold text-primary mb-1 text-center">Lê Bình</h2>
-      <p className="text-sm text-muted-foreground mb-3 text-center">Software Engineer - Frontend Developer</p>
+      <p className="text-sm text-muted-foreground mb-2 text-center">Software Engineer - Frontend Developer</p>
       {/* Contact Info */}
-      <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-4 w-full">
+      <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-3 w-full">
         <div><b>DOB:</b> Jan 3rd, 1999</div>
         <div><b>Email:</b> lebinh030199@gmail.com</div>
         <div><b>Phone:</b> (+84) 972 711 157</div>
       </div>
       {/* Navigation */}
-      <nav className="flex flex-col gap-2 w-full mb-4">
+      <nav className="flex flex-col gap-2 w-full mb-3">
         {navLinks.map((link) => {
           const Icon = link.icon;
           const isActive = active === link.id;
@@ -47,7 +47,7 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
         })}
       </nav>
       {/* Socials */}
-      <div className="flex gap-4 mt-2 text-xl text-zinc-600 dark:text-zinc-300">
+      <div className="flex gap-3 mt-2 text-lg text-zinc-600 dark:text-zinc-300">
         <a href="#" aria-label="GitHub"><i className="fa-brands fa-github" /></a>
         <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></a>
         <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook" /></a>

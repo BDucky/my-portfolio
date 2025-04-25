@@ -25,8 +25,11 @@ export default function Home() {
       {/* <ThemeToggle /> */}
       <StarsBackground />
       <div className="flex w-full max-w-6xl mx-auto pt-10 gap-8 relative z-10">
+        {/* Use flex for Sidebar to ensure sticky works with scrolling */}
         <Sidebar onNavClick={handleSectionChange} active={active} />
-        <MainContent active={active} />
+        <div className="flex-1 pl-2 md:pl-8 ml-72">
+          <MainContent active={active} />
+        </div>
       </div>
     </div>
   );
