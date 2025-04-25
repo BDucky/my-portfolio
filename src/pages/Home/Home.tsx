@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative transition-colors duration-350 bg-background text-foreground overflow-hidden">
       <Spotlight />
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <StarsBackground />
       <div className="flex w-full max-w-6xl mx-auto pt-10 gap-8 relative z-10">
         <Sidebar onNavClick={handleSectionChange} active={active} />

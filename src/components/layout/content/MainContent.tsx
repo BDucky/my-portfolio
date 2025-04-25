@@ -2,6 +2,7 @@ import { PersonalInfo } from "@/components/sections/personal";
 import { Experience, Timeline } from "@/components/sections/work";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Briefcase, BookOpen } from "lucide-react";
+import { JSX } from "react";
 
 interface MainContentProps {
   active: string;
