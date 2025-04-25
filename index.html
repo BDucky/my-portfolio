@@ -5,6 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
+    <script>
+      // Force dark mode and background color BEFORE anything renders
+      document.documentElement.classList.add('dark');
+      document.body.style.background = '#181a20'; // match your stars bg
+    </script>
   </head>
   <body>
     <div id="root"></div>

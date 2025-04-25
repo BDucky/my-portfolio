@@ -16,14 +16,13 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
         className="w-28 h-28 rounded-xl object-cover mb-4 border-4 border-primary shadow-md"
       />
       {/* Name & Title */}
-      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Nguyễn Thanh Diệu</h2>
-      <p className="text-sm text-muted-foreground mb-3 text-center">Software Engineer - Front end</p>
+      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Lê Bình</h2>
+      <p className="text-sm text-muted-foreground mb-3 text-center">Software Engineer - Frontend Developer</p>
       {/* Contact Info */}
       <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-4 w-full">
-        <div><b>Birthday:</b> 1996/09/21</div>
-        <div><b>Email:</b> nguyenthanhdieu96@gmail.com</div>
-        <div><b>Phone:</b> (+84) 373 766 052</div>
-        <div><b>Skype Live:</b> live:nguyenthanhdieu96</div>
+        <div><b>DOB:</b> Jan 3rd, 1999</div>
+        <div><b>Email:</b> lebinh030199@gmail.com</div>
+        <div><b>Phone:</b> (+84) 972 711 157</div>
       </div>
       {/* Navigation */}
       <nav className="flex flex-col gap-2 w-full mb-4">
