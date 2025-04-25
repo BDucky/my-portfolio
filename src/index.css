@@ -120,6 +120,9 @@ html {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-350;
+  }
+  .theme-switching {
+    transition: background 0.35s, color 0.35s;
   }
 }

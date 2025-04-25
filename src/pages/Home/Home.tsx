@@ -1,11 +1,13 @@
-import StarsBackground from "@/components/layout/StarsBackground";
+import StarsBackground from "@/components/layout/background/StarsBackground";
 import { PersonalInfo } from "@/components/sections/personal";
 import { Experience, Timeline } from "@/components/sections/work";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import ThemeToggle from "@/components/ui/theme-toggle";
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative text-white">
+    <div className="min-h-screen relative text-white transition-colors duration-350">
+      <ThemeToggle />
       <StarsBackground />
       <Tabs defaultValue="personal" className="w-full max-w-4xl mx-auto mt-10">
         <TabsList>
