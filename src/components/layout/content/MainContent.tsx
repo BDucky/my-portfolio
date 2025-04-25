@@ -22,7 +22,7 @@ const sectionIconMap: Record<string, JSX.Element> = {
 
 export default function MainContent({ active }: MainContentProps) {
   return (
-    <div className="flex-1 flex flex-col px-2 md:px-8 py-6">
+    <div className="flex-1 flex flex-col px-2 md:px-8 pt-0 py-6">
       <AnimatePresence mode="wait">
         {active === "personal" && (
           <motion.section
