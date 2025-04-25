@@ -115,6 +115,41 @@ html {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadein {
+  animation: fadein 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Sidebar theme styles for best UX/UI */
+.sidebar {
+  @apply bg-white/80 dark:bg-black/70 text-zinc-800 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-800 shadow-md;
+}
+.sidebar button {
+  @apply transition-all duration-300 px-4 py-2 rounded-lg font-semibold outline-none focus:ring-2 focus:ring-primary/50;
+}
+.sidebar button.bg-primary {
+  @apply text-primary-foreground scale-105 shadow-lg ring-2 ring-primary/50;
+}
+.sidebar button:hover:not(.bg-primary) {
+  @apply bg-zinc-100 dark:bg-zinc-800;
+}
+
+/* Section backgrounds for contrast */
+section {
+  @apply rounded-xl p-6 mb-6 bg-zinc-50 dark:bg-zinc-900 shadow-sm transition-colors duration-350;
+}
+
+/* Ensure text is readable in both themes */
+body, .text-foreground {
+  @apply text-zinc-800 dark:text-zinc-100;
+}
+.bg-background {
+  @apply bg-zinc-50 dark:bg-zinc-950;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
