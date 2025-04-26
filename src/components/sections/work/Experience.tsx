@@ -77,7 +77,7 @@ export default function Experience() {
               </span>
             </div>
           )}
-          <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 mb-8">
+          <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 mb-8 text-left space-y-2">
             {exp.description.map((desc, i) => (
               <li key={i}>{desc}</li>
             ))}

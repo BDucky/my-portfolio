@@ -48,7 +48,7 @@ export default function PersonalInfo() {
         <h4 className="font-semibold text-lg text-primary">Education</h4>
         <div className="flex-1 h-px bg-primary/20 mx-2" />
       </div>
-      <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 mb-8">
+      <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 mb-8 text-left space-y-2">
         <li>
           <span className="font-bold">
             Posts and Telecommunications Institute of Technology:
@@ -68,7 +68,7 @@ export default function PersonalInfo() {
         <h4 className="font-semibold text-lg text-primary">Technical skills</h4>
         <div className="flex-1 h-px bg-primary/20 mx-2" />
       </div>
-      <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 space-y-1">
+      <ul className="list-disc list-inside text-sm md:text-base text-zinc-700 dark:text-zinc-200 space-y-2 text-left">
         <li>
           <span className="font-bold">Programming Languages:</span> Typescript,
           Javascript, PHP
