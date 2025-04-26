@@ -1,4 +1,5 @@
 import { Briefcase, User } from "lucide-react";
+import profileImage from '@/assets/image/profile.jpeg'
 
 const navLinks = [
   { id: "personal", label: "About", icon: User },
@@ -11,7 +12,7 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
     <aside className="sidebar fixed top-16 w-72 min-w-[260px] max-w-xs flex flex-col gap-2 items-center rounded-2xl py-6 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md z-30">
       {/* Profile Image */}
       <img
-        src="/profile.jpg"
+        src={profileImage}
         alt="Profile"
         className="w-24 h-24 rounded-xl object-cover mb-3 border-4 border-primary shadow-md"
       />
