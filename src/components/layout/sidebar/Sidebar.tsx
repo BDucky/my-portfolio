@@ -8,7 +8,7 @@ const navLinks = [
 
 export default function Sidebar({ onNavClick, active }: { onNavClick: (id: string) => void; active: string }) {
   return (
-    <aside className="sidebar fixed top-16 h-[85vh] w-72 min-w-[260px] max-w-xs flex flex-col items-center rounded-2xl py-6 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md z-30">
+    <aside className="sidebar fixed top-16 w-72 min-w-[260px] max-w-xs flex flex-col gap-2 items-center rounded-2xl py-6 px-6 bg-white/90 dark:bg-zinc-900/90 shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-md z-30">
       {/* Profile Image */}
       <img
         src="/profile.jpg"

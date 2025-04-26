@@ -63,9 +63,9 @@ export default function Experience() {
             <span className="text-primary font-semibold text-sm md:text-base min-w-[120px]">
               {exp.from} - {exp.to}
             </span>
-            <span className="font-bold text-lg text-zinc-900 dark:text-zinc-100">
+            {/* <span className="font-bold text-lg text-zinc-900 dark:text-zinc-100">
               {exp.role}
-            </span>
+            </span> */}
           </div>
           {exp.tech && (
             <div className="mb-2">
