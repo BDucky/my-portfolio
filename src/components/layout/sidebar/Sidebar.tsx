@@ -16,8 +16,7 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
         className="w-24 h-24 rounded-xl object-cover mb-3 border-4 border-primary shadow-md"
       />
       {/* Name & Title */}
-      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Dieu Nguyen</h2>
-      {/* <h2 className="text-2xl font-bold text-primary mb-1 text-center">Binh Le (Mr.)</h2> */}
+      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Binh Le (Mr.)</h2>
       <p className="text-sm text-muted-foreground mb-2 text-center">Software Engineer - Frontend Developer</p>
       {/* Contact Info */}
       <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-3 w-full space-y-1">
