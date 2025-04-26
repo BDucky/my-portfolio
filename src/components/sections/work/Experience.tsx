@@ -7,7 +7,31 @@ const experiences = [
     role: "Frontend Developer",
     from: "Mar 2023",
     to: "Present",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "JavaScript",
+      "Next.js",
+      "Ant Design",
+      "Bootstrap",
+      "jQuery",
+      "REST API",
+      "WebSocket",
+      "Redux",
+      "Zustand",
+      "Git",
+      "Docker",
+      "MySQL",
+      "PostgreSQL",
+      "NoSQL",
+      "Figma",
+      "Responsive Design",
+      "Accessibility",
+      "Unit Testing",
+      "Jest",
+      "Cypress",
+    ],
     description: [
       "Developed and maintained web applications for German clients.",
       "Collaborated with backend teams to integrate RESTful APIs.",
@@ -19,7 +43,29 @@ const experiences = [
     role: "Frontend Developer",
     from: "May 2021",
     to: "Feb 2023",
-    tech: ["React", "WebSocket", "Accessibility"],
+    tech: [
+      "React",
+      "WebSocket",
+      "Accessibility",
+      "TypeScript",
+      "Redux",
+      "Ant Design",
+      "Bootstrap",
+      "JavaScript",
+      "jQuery",
+      "Next.js",
+      "REST API",
+      "Git",
+      "Docker",
+      "MySQL",
+      "PostgreSQL",
+      "NoSQL",
+      "Figma",
+      "Responsive Design",
+      "Unit Testing",
+      "Jest",
+      "Cypress",
+    ],
     description: [
       "Built and enhanced UI components for US and Vietnam clients.",
       "Worked on real-time features using WebSocket.",
@@ -31,7 +77,21 @@ const experiences = [
     role: "Web Developer",
     from: "2019",
     to: "2021",
-    tech: ["Custom Websites", "Deployment", "Maintenance"],
+    tech: [
+      "Custom Websites",
+      "Deployment",
+      "Maintenance",
+      "WordPress",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "SEO",
+      "Google Analytics",
+      "Git",
+      "Responsive Design",
+      "Client Communication",
+    ],
     description: [
       "Delivered custom websites for small businesses.",
       "Managed deployments and ongoing maintenance.",
@@ -59,7 +119,7 @@ export default function Experience() {
             </h3>
             <div className="flex-1 h-px bg-primary/20 mx-2" />
           </div>
-          <div className="flex flex-col md:flex-row md:items-center gap-2 mb-8">
+          <div className="flex flex-col text-left md:flex-row md:items-center gap-2 mb-8">
             <span className="text-primary font-semibold text-sm md:text-base min-w-[120px]">
               {exp.from} - {exp.to}
             </span>
@@ -68,7 +128,7 @@ export default function Experience() {
             </span> */}
           </div>
           {exp.tech && (
-            <div className="mb-2">
+            <div className="mb-2 text-left">
               <span className="font-semibold text-sm text-blue-600 dark:text-blue-400">
                 Tech:
               </span>

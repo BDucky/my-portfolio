@@ -1,9 +1,9 @@
-import { User, Briefcase, BookOpen } from "lucide-react";
+import { Briefcase, User } from "lucide-react";
 
 const navLinks = [
   { id: "personal", label: "About", icon: User },
   { id: "experience", label: "Experiences", icon: Briefcase },
-  { id: "timeline", label: "Projects", icon: BookOpen },
+  // { id: "timeline", label: "Projects", icon: BookOpen },
 ];
 
 export default function Sidebar({ onNavClick, active }: { onNavClick: (id: string) => void; active: string }) {
@@ -16,10 +16,11 @@ export default function Sidebar({ onNavClick, active }: { onNavClick: (id: strin
         className="w-24 h-24 rounded-xl object-cover mb-3 border-4 border-primary shadow-md"
       />
       {/* Name & Title */}
-      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Thanh Diệu</h2>
+      <h2 className="text-2xl font-bold text-primary mb-1 text-center">Dieu Nguyen</h2>
+      {/* <h2 className="text-2xl font-bold text-primary mb-1 text-center">Binh Le (Mr.)</h2> */}
       <p className="text-sm text-muted-foreground mb-2 text-center">Software Engineer - Frontend Developer</p>
       {/* Contact Info */}
-      <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-3 w-full">
+      <div className="text-xs text-zinc-700 dark:text-zinc-300 mb-3 w-full space-y-1">
         <div><b>DOB:</b> Jan 3rd, 1999</div>
         <div><b>Email:</b> lebinh030199@gmail.com</div>
         <div><b>Phone:</b> (+84) 972 711 157</div>

@@ -10,8 +10,18 @@ interface MainContentProps {
 
 const sectionVariants = {
   initial: { opacity: 0, y: 48, scale: 0.97 },
-  animate: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] } },
-  exit: { opacity: 0, y: -48, scale: 0.97, transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] } },
+  animate: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
+  },
+  exit: {
+    opacity: 0,
+    y: -48,
+    scale: 0.97,
+    transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
+  },
 };
 
 const sectionIconMap: Record<string, JSX.Element> = {
@@ -22,7 +32,7 @@ const sectionIconMap: Record<string, JSX.Element> = {
 
 export default function MainContent({ active }: MainContentProps) {
   return (
-    <div className="flex-1 flex flex-col px-2 md:px-8 pt-0 py-6">
+    <div className="flex-1 flex flex-col px-2 md:px-8 pt-0 py-6 backdrop-blur-md">
       <AnimatePresence mode="wait">
         {active === "personal" && (
           <motion.section
