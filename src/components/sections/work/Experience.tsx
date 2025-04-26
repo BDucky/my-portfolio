@@ -30,8 +30,11 @@ const experiences = [
     ],
     description: [
       "Developed and maintained web applications for clients.",
-      "Collaborated with backend teams to integrate RESTful and GraphQL APIs.",
       "Implemented responsive UI using React, TypeScript, and Tailwind CSS.",
+      "Optimized page load speed, reducing average load time by 35% across key projects.",
+      "Collaborated closely with backend and design teams to deliver seamless user experiences.",
+      "Reduced bug rate by 25% by introducing stricter TypeScript and code reviews.",
+      "Mentored 2 intern developers and had weekly knowledge sharing sessions.",
     ],
   },
   {
@@ -90,7 +93,6 @@ const experiences = [
       "Built and enhanced UI components for Europe and Vietnam clients.",
       "Worked on real-time features using WebSocket.",
       "Implemented responsive UI using React, TypeScript, and Tailwind CSS.",
-      "Optimized performance and accessibility across browsers.",
     ],
   },
   {
@@ -118,6 +120,8 @@ const experiences = [
       "Delivered custom websites for small businesses.",
       "Implemented responsive UI using React, TypeScript, and Tailwind CSS.",
       "Managed deployments and ongoing maintenance.",
+      "Launched 5+ client sites, each with SEO best practices and mobile-first design.",
+      "Recognized for delivering projects ahead of schedule and exceeding client expectations.",
     ],
   },
 ];
@@ -143,7 +147,7 @@ export default function Experience() {
             </div>
             <div className="flex-1 h-px bg-primary/20 mx-2" />
           </div>
-          <div className="flex flex-wrap gap-2 mb-2">
+          <div className="flex flex-wrap gap-2 mb-4">
             {exp.tech.map((tech, i) => (
               <span key={i} className="inline-block px-2 py-1 rounded cursor-pointer bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-xs font-semibold animate-fade-in">
                 {tech}
