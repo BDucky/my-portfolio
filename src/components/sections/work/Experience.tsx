@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaBriefcase, FaRegCircle } from "react-icons/fa";
+import { FaRegCircle } from "react-icons/fa";
 
 const experiences = [
   {
