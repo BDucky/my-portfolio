@@ -40,9 +40,9 @@ export default function Home() {
         />
         {/* Sidebar: mobile slides in, desktop as before */}
         <div
-          className={`md:static md:block md:w-72 md:min-w-[260px] md:max-w-xs ${
-            sidebarOpen ? 'fixed top-0 left-0 h-full w-72 z-40 transition-transform duration-300 translate-x-0 md:translate-x-0' :
-            'fixed top-0 left-0 h-full w-72 z-40 transition-transform duration-300 -translate-x-full md:translate-x-0 md:relative md:left-0 md:top-0'
+          className={`md:static md:block md:w-80 md:min-w-[280px] md:max-w-xs ${
+            sidebarOpen ? 'fixed top-0 left-0 h-full w-80 z-40 transition-transform duration-300 translate-x-0 md:translate-x-0' :
+            'fixed top-0 left-0 h-full w-80 z-40 transition-transform duration-300 -translate-x-full md:translate-x-0 md:relative md:left-0 md:top-0'
           }`}
           style={{ maxWidth: '20rem', minWidth: '16.25rem' }}
         >
