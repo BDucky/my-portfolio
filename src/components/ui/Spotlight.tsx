@@ -1,10 +1,5 @@
 import { useEffect, useRef } from "react";
 
-const getTheme = () => {
-  if (typeof window === "undefined") return "light";
-  return document.documentElement.classList.contains("dark") ? "dark" : "light";
-};
-
 export default function Spotlight() {
   const spotRef = useRef<HTMLDivElement>(null);
 
@@ -21,11 +16,8 @@ export default function Spotlight() {
   }, []);
 
   // Theme-aware radial gradient
-  const theme = getTheme();
   const gradient =
-    theme === "dark"
-      ? "radial-gradient(circle at center, rgba(56,189,248,0.15) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)"
-      : "radial-gradient(circle at center, rgba(56,189,248,0.18) 0%, rgba(255,255,255,0.1) 60%, transparent 100%)";
+    "radial-gradient(circle at center, rgba(56,189,248,0.15) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)";
 
   return (
     <div

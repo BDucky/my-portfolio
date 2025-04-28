@@ -36,7 +36,7 @@ export default function PersonalInfo() {
         >
           DISION Tech LLC
         </a>
-        , I successfully contributed to projects for clients in the europe and
+        , I successfully contributed to projects for clients in the Europe and
         Vietnam. Currently, I am leveraging my skills at{" "}
         <a
           href="https://vietnamblockchain.asia/"
@@ -69,12 +69,12 @@ export default function PersonalInfo() {
         <li>
           <span className="font-bold">Tra Vinh University</span> 2024 - now
         </li>
-        <li>
+        {/* <li>
           <span className="font-bold">Knowledge:</span> React, ReactJs, NextJs, WebSocket,
           Accessibility, TypeScript, JavaScript, Redux, Ant Design, ShadcnUI,
           Bootstrap, JavaScript, Next.js, REST API, Git, Figma,
           Responsive Design...
-        </li>
+        </li> */}
       </ul>
       {/* Technical skills */}
       <div className="flex items-center gap-4 mb-2">

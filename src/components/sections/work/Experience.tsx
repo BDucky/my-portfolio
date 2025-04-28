@@ -31,7 +31,7 @@ const experiences = [
     description: [
       "Developed and maintained web applications for clients.",
       "Implemented responsive UI using React, TypeScript, and Tailwind CSS.",
-      "Optimized page load speed, reducing average load time by 35% across key projects.",
+      "Optimized page load speed, reducing average load time by 25% across key projects.",
       "Collaborated closely with backend and design teams to deliver seamless user experiences.",
       "Reduced bug rate by 25% by introducing stricter TypeScript and code reviews.",
       "Mentored 2 intern developers and had weekly knowledge sharing sessions.",
