@@ -24,8 +24,9 @@ const projects: Project[] = [
     description:
       "AI-powered learning path generator using Google Gemini AI and Groq. Features AI Chat Assistant for 24/7 guidance, automatic YouTube video recommendations, progress tracking, and local storage. Built with Vue 3 Composition API.",
     tech: ["Vue 3", "Vite", "Tailwind CSS", "Pinia", "Google Gemini AI", "Groq SDK", "YouTube API"],
+    link: "https://pathfinder-rowboat.vercel.app/dashboard",
     github: "https://github.com/BDucky/pathfinder",
-    status: "Completed",
+    status: "Live",
   },
   {
     title: "Health App",
