@@ -47,7 +47,7 @@ export default function PersonalInfo() {
         , I successfully contributed to projects for clients in Europe and
         Vietnam. Currently, I am working at{" "}
         <a
-          href="https://rowboat.com/"
+          href="https://www.corjl.com/en/web/"
           target="_blank"
           className="underline text-blue-400"
         >
