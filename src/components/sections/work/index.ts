@@ -1,4 +1,5 @@
 import Experience from "./Experience";
 import Timeline from "./Timeline";
+import Projects from "./Projects";
 
-export { Experience, Timeline };
+export { Experience, Timeline, Projects };

@@ -1,10 +1,10 @@
-import { Briefcase, User } from "lucide-react";
+import { Briefcase, User, FolderKanban } from "lucide-react";
 import profileImage from '@/assets/image/profile.jpeg'
 
 const navLinks = [
   { id: "personal", label: "About", icon: User },
   { id: "experience", label: "Experiences", icon: Briefcase },
-  // { id: "timeline", label: "Projects", icon: BookOpen },
+  { id: "projects", label: "Projects", icon: FolderKanban },
 ];
 
 export default function Sidebar({ onNavClick, active }: { onNavClick: (id: string) => void; active: string }) {

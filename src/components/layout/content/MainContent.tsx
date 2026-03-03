@@ -1,7 +1,7 @@
 import { PersonalInfo } from "@/components/sections/personal";
-import { Experience, Timeline } from "@/components/sections/work";
+import { Experience, Projects } from "@/components/sections/work";
 import { motion, AnimatePresence } from "framer-motion";
-import { User, Briefcase, BookOpen } from "lucide-react";
+import { User, Briefcase, FolderKanban } from "lucide-react";
 import { JSX } from "react";
 
 interface MainContentProps {
@@ -27,7 +27,7 @@ const sectionVariants = {
 const sectionIconMap: Record<string, JSX.Element> = {
   personal: <User className="w-6 h-6 mr-2 text-primary" />,
   experience: <Briefcase className="w-6 h-6 mr-2 text-primary" />,
-  timeline: <BookOpen className="w-6 h-6 mr-2 text-primary" />,
+  projects: <FolderKanban className="w-6 h-6 mr-2 text-primary" />,
 };
 
 export default function MainContent({ active }: MainContentProps) {
@@ -66,9 +66,9 @@ export default function MainContent({ active }: MainContentProps) {
             <Experience />
           </motion.section>
         )}
-        {active === "timeline" && (
+        {active === "projects" && (
           <motion.section
-            key="timeline"
+            key="projects"
             variants={sectionVariants}
             initial="initial"
             animate="animate"
@@ -76,10 +76,10 @@ export default function MainContent({ active }: MainContentProps) {
             className="rounded-2xl bg-white/80 dark:bg-zinc-900/80 shadow-2xl p-8 md:p-12 border border-zinc-200 dark:border-zinc-800 relative overflow-hidden"
           >
             <div className="flex items-center mb-6">
-              {sectionIconMap.timeline}
+              {sectionIconMap.projects}
               <h3 className="text-2xl font-bold tracking-wide">Projects</h3>
             </div>
-            <Timeline />
+            <Projects />
           </motion.section>
         )}
       </AnimatePresence>
