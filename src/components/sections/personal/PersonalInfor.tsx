@@ -19,14 +19,14 @@ export default function PersonalInfo() {
         <div className="flex-1 h-px bg-primary/20 mx-2" />
       </div>
       <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-200 mb-8">
-        Front-end Developer with nearly 3 years of experience, specializing in{" "}
+        Front-end Developer with nearly 5 years of experience, specializing in{" "}
         <span className="font-bold text-blue-500">ReactJS</span> and other
         front-end technologies. Skilled in{" "}
         <span className="font-bold text-blue-400">TypeScript</span>,{" "}
         <span className="font-bold text-blue-400">Ant Design</span>,{" "}
         <span className="font-bold text-blue-400">Bootstrap</span>,{" "}
         <span className="font-bold text-blue-400">jQuery</span>,{" "}
-        <span className="font-bold text-blue-400">Tailwinds</span> and{" "}
+        <span className="font-bold text-blue-400">Tailwind CSS</span> and{" "}
         <span className="font-bold text-blue-400">JavaScript</span>. After years
         working at{" "}
         <a
@@ -35,19 +35,31 @@ export default function PersonalInfo() {
           className="underline text-blue-400"
         >
           DISION Tech LLC
-        </a>
-        , I successfully contributed to projects for clients in the Europe and
-        Vietnam. Currently, I am leveraging my skills at{" "}
+        </a>{" "}
+        and{" "}
         <a
           href="https://vietnamblockchain.asia/"
           target="_blank"
           className="underline text-blue-400"
         >
           Vietnam Blockchain Corporation (VBC)
+        </a>
+        , I successfully contributed to projects for clients in Europe and
+        Vietnam. Currently, I am working at{" "}
+        <a
+          href="https://rowboat.com/"
+          target="_blank"
+          className="underline text-blue-400"
+        >
+          Rowboat Software Company
         </a>{" "}
-        to develop smart water management application for clients in the
-        Southern of Vietnam. Additionally, I have experience integrating APIs
-        based on backend technologies like Restful and GraphQL, . Renowned for
+        as a Frontend Developer, embracing the AI era by leveraging tools like{" "}
+        <span className="font-bold text-blue-400">Windsurf</span>,{" "}
+        <span className="font-bold text-blue-400">Cursor</span>,{" "}
+        <span className="font-bold text-blue-400">Claude</span>, and{" "}
+        <span className="font-bold text-blue-400">MCP</span> to accelerate
+        development workflows. Additionally, I have experience integrating APIs
+        based on backend technologies like RESTful and GraphQL. Renowned for
         my commitment to delivering high-quality results and effectively
         tackling complex challenges.
       </p>
@@ -105,7 +117,36 @@ export default function PersonalInfo() {
         </li>
         <li>
           <span className="font-bold">Data Fetching Libraries:</span> Axios,
-          Graphql, Apollo Client 
+          GraphQL, Apollo Client
+        </li>
+        <li>
+          <span className="font-bold">AI-Era Tools:</span> Windsurf, Cursor,
+          Claude, ChatGPT, GitHub Copilot, Gemini.
+        </li>
+        <li>
+          <span className="font-bold">AI Development:</span> MCP (Model Context Protocol),
+          Agentic Coding, Prompt Engineering, AI-Assisted Code Review,
+          AI Pair Programming
+        </li>
+        <li>
+          <span className="font-bold">CLI & Automation:</span> Terminal, Zsh,
+          Bash scripting, npm/yarn/pnpm scripts, Git CLI, Make, Build tools (Vite, Webpack, Turbopack)
+        </li>
+        <li>
+          <span className="font-bold">Testing:</span> Vitest, Jest, React Testing Library,
+          Playwright, Cypress, Unit Testing, E2E Testing
+        </li>
+        <li>
+          <span className="font-bold">DevOps & Deployment:</span> Docker, GitHub Actions,
+          CI/CD, Vercel, Netlify, AWS (S3, CloudFront), Nginx
+        </li>
+        <li>
+          <span className="font-bold">Backend & Cloud (Basic):</span> AWS (Amplify, Cognito, AppSync, S3),
+          Firebase, Supabase, REST API integration, GraphQL
+        </li>
+        <li>
+          <span className="font-bold">Design & Collaboration:</span> Figma, Adobe XD,
+          Notion, Jira, Linear, Slack, Discord
         </li>
       </ul>
     </motion.section>
