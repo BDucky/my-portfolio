@@ -3,7 +3,7 @@ import MainContent from "@/components/layout/content/MainContent";
 import Sidebar from "@/components/layout/sidebar/Sidebar";
 import Spotlight from "@/components/ui/Spotlight";
 import BackToTop from "@/components/ui/BackToTop";
-import ThemeToggle from "@/components/ui/ThemeToggle";
+// import ThemeToggle from "@/components/ui/ThemeToggle";
 import { useState } from "react";
 
 export default function Home() {
